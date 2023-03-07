@@ -1,8 +1,8 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => 'v10.0.3',
-        'version' => '10.0.3.0',
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
         'reference' => NULL,
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
@@ -371,8 +371,8 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'v10.0.3',
-            'version' => '10.0.3.0',
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
             'reference' => NULL,
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
@@ -421,6 +421,15 @@
             'reference' => '04a2d3bd0d650c0764f70bf49d1ee39393e4eb10',
             'type' => 'library',
             'install_path' => __DIR__ . '/../laravel/tinker',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'laravel/ui' => array(
+            'pretty_version' => 'v4.2.1',
+            'version' => '4.2.1.0',
+            'reference' => '05ff7ac1eb55e2dfd10edcfb18c953684d693907',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../laravel/ui',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -620,9 +629,9 @@
             'dev_requirement' => true,
         ),
         'phpunit/phpunit' => array(
-            'pretty_version' => '10.0.13',
-            'version' => '10.0.13.0',
-            'reference' => 'c37a88d7a905266eab6498817a1bf1170043313f',
+            'pretty_version' => '10.0.14',
+            'version' => '10.0.14.0',
+            'reference' => '7065dbebcb0f66cf16a45fc9cfc28c2351e06169',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(),
@@ -715,8 +724,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '3.0.0',
+                0 => '3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache' => array(
@@ -968,7 +977,7 @@
         'symfony/deprecation-contracts' => array(
             'pretty_version' => 'v3.2.1',
             'version' => '3.2.1.0',
-            'reference' => '0121954c80fd17c18cf050fe73360e63bb43d4fb',
+            'reference' => 'e2d1534420bd723d0ef5aec58a22c5fe60ce6f5e',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/deprecation-contracts',
             'aliases' => array(),
@@ -995,7 +1004,7 @@
         'symfony/event-dispatcher-contracts' => array(
             'pretty_version' => 'v3.2.1',
             'version' => '3.2.1.0',
-            'reference' => '2265d0faa6d870182dd8c65e40d3dfbc34e79b26',
+            'reference' => '0ad3b6f1e4e2da5690fefe075cd53a238646d8dd',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/event-dispatcher-contracts',
             'aliases' => array(),
@@ -1145,7 +1154,7 @@
         'symfony/service-contracts' => array(
             'pretty_version' => 'v3.2.1',
             'version' => '3.2.1.0',
-            'reference' => 'aee5f59db63978f7785290b94d2f12286b1b590a',
+            'reference' => 'a8c9cedf55f314f3a186041d19537303766df09a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/service-contracts',
             'aliases' => array(),
@@ -1172,7 +1181,7 @@
         'symfony/translation-contracts' => array(
             'pretty_version' => 'v3.2.1',
             'version' => '3.2.1.0',
-            'reference' => '1f40e77fbb12a16d841688f42fecefd8ceb43ed6',
+            'reference' => 'dfec258b9dd17a6b24420d464c43bffe347441c8',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/translation-contracts',
             'aliases' => array(),
