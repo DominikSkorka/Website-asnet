@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Models\Flight;
 
 class UserController extends Controller
 {
@@ -58,8 +59,12 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($id)
     {
-        //
+        $flight = Flight::find(id);
+        $flight->delete();
+        return response()->json([
+            'status' => 'success'
+        ]);
     }
 }

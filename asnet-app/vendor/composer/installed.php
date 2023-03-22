@@ -1,6 +1,6 @@
 <?php return array(
     'root' => array(
-        'name' => 'laravel/laravel',
+        'name' => 'asnetshop/asnet',
         'pretty_version' => '1.0.0+no-version-set',
         'version' => '1.0.0.0',
         'reference' => NULL,
@@ -10,6 +10,15 @@
         'dev' => true,
     ),
     'versions' => array(
+        'asnetshop/asnet' => array(
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'reference' => NULL,
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'brick/math' => array(
             'pretty_version' => '0.10.2',
             'version' => '0.10.2.0',
@@ -367,15 +376,6 @@
             'reference' => '57850ab537cf0554b5b616215079c761b98168c8',
             'type' => 'library',
             'install_path' => __DIR__ . '/../laravel/framework',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
-        'laravel/laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
-            'type' => 'project',
-            'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
         ),

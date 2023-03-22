@@ -20,10 +20,31 @@
             <td>{{$user->name}}</td>
             <td>{{$user->surname}}</td>
             <td>{{$user->phone_number}}</td>
+            <td>
+                <button class="btn btn-danger btn-sm" data-id="{{$user->id}}">
+                    X
+            </td>
         </tr>
         @endforeach
         </tbody>
     </table>
         {{$users->Links()}}
         </div>
+@endsection
+
+@section('javascript')
+        $(function(){
+            $('.delete').click(function() {
+                $.ajax({
+                            method: "DELETE",
+                            url: "http://asnet.test/users/" + $(this).data("id")
+                }) 
+                .done(function(response){
+                  window.location.reload();  
+                })
+                .fail(function(response){
+                      alert("ERROR");  
+                });
+            });
+        });
 @endsection
